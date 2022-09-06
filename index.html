@@ -50,6 +50,18 @@
     </script>
 </head>
 <body>
+    <!-- Some quick links -->
+    <div class="links">
+        <h3 class="links_title">Lion</h3>
+        <div class="links_flex_contianer">
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="https://www.splivid.live/">Splvid</a>
+
+            <a href="#" class="cta_link">Get In Touch</a>
+        </div>
+    </div>
+
     <div class="hero">
         <img src="./assets/img/hero_avatar_image.png" alt="Lion's Profile Picture" class="hero_avatar_image">
         <h1 class="hero_title">Hi, I'm <span class="hero_username">Lion</span>.</h1>
@@ -57,7 +69,7 @@
     </div>
 
     <!-- The skills I have -->
-    <div class="skills">
+    <div class="skills" id="skills">
         <h3 class="skills_title">My Skills</h3>
 
         <!-- The FlexBox container that stores all the skills -->
@@ -70,7 +82,41 @@
             <!-- ReactJS Skill -->
             <div class="skill_container">
                 <img src="./assets/img/react_logo.png" alt="React Logo" class="skill_container_image">
-                <p class="skill_name">React JS</p>
+                <p class="skill_name">React javascript</p>
+            </div>
+            <!-- NextJS Skill -->
+            <div class="skill_container">
+                <img src="./assets/img/react_logo.png" alt="React Logo" class="skill_container_image">
+                <p class="skill_name">Next JS</p>
+            </div>
+            <!-- Docker Skill -->
+            <div class="skill_container">
+                <img src="./assets/img/react_logo.png" alt="React Logo" class="skill_container_image">
+                <p class="skill_name">Docker <span class="skill_learning">Still Learning</span></p>
+            </div>
+            <!-- MongoDB Skill -->
+            <div class="skill_container">
+                <img src="./assets/img/react_logo.png" alt="React Logo" class="skill_container_image">
+                <p class="skill_name">MongoDB</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects">
+        <h3 class="projects_title">My Projects</h3>
+
+        <div class="projects_flex_container" id="projects">
+            <div class="project_container">
+                <p class="project_name">Project One <span className="skill_learning">MongoDB</span></p>
+                <a href="#" class="skill_visit">Visit</a>
+            </div>
+            <div class="project_container">
+                <p class="project_name">Project Two <span className="skill_learning">Docker, MongoDB</span></p>
+                <a href="#" class="skill_visit">Visit</a>
+            </div>
+            <div class="project_container">
+                <p class="project_name">Project Three <span className="skill_learning">ExpressJS</span></p>
+                <a href="#" class="skill_visit">Visit</a>
             </div>
         </div>
     </div>
