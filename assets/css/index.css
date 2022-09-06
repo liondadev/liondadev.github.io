@@ -32,3 +32,41 @@
 #hero_who_am_i_text {
     color: #1dd1a1;
 }
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+
+    background: #34495e;
+}
+
+.skills_flex_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.skills_title {
+    color: white;
+    font-size: 2rem;
+}
+
+.skill_container {
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill_container_image {
+    width: 8rem;
+}
