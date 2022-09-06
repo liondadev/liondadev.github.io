@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lion's Portfolio</title>
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <script defer>
+        window.onload = () => {
+            const element = document.getElementById('hero_who_am_i_text');
+            const texts = [
+                "make things with react",
+                "make things with nextjs",
+                "like playing with my dogs",
+                "go to school",
+                "bribe people with cheetos",
+                "like reading (sometimes)",
+                "like riding my bike",
+                "also make Garry's Mod Addons",
+                "hate dress shoes",
+                "don't use semicolons in javascript",
+                "want to learn x86 ASM (to flex on other people)",
+                "like open-source",
+                "strongly prefer dogs over cats",
+                "have a great dane",
+                "also have a mini austrailian laboradoodle",
+                "prefer single quote strings, but I often get them confused",
+                "hate going to sleep, but also hate waking up",
+                "don't care that eating a hot dog takes 69 years off my life, I still love and eat them"
+            ]
+            let i = 0
+
+            function advance() {
+                if (i >= texts.length) {
+                    i = 0
+                }
+
+                element.innerText = texts[i]
+
+                i++
+
+                setTimeout(advance, 2000)
+            }
+
+            advance()
+        }
+    </script>
+</head>
+<body>
+    <div class="hero">
+        <img src="./assets/img/hero_avatar_image.png" alt="Lion's Profile Picture" class="hero_avatar_image">
+        <h1 class="hero_title">Hi, I'm <span class="hero_username">Lion</span>.</h1>
+        <p class="hero_who_am_i_starttext">and I <span id="hero_who_am_i_text">do lots of stuff</span></p>
+    </div>
+
+    <!-- The skills I have -->
+    <div class="skills">
+        <h3 class="skills_title">My Skills</h3>
+
+        <!-- The FlexBox container that stores all the skills -->
+        <div class="skills_flex_container">
+            <!-- NodeJS Skill -->
+            <div class="skill_container">
+                <img src="./assets/img/nodejs_logo.png" alt="NodeJS Logo" class="skill_container_image">
+                <p class="skill_name">Node JS</p>
+            </div>
+            <!-- ReactJS Skill -->
+            <div class="skill_container">
+                <img src="./assets/img/react_logo.png" alt="React Logo" class="skill_container_image">
+                <p class="skill_name">React JS</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
