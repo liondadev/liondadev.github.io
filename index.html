@@ -14,58 +14,23 @@
     <meta property="og:image" content="https://liondadev.github.io/assets/img/hero_avatar_image.png" />
     <meta property="og:description" content="Lion's Super Duper Awesome Portfolio :)" />
     <meta name="theme-color" content="#1dd1a1">
-
-    <script defer>
-        window.onload = () => {
-            const element = document.getElementById('hero_who_am_i_text');
-            const texts = [
-                "make things with react",
-                "make things with nextjs",
-                "like playing with my dogs",
-                "go to school",
-                "bribe people with cheetos",
-                "like reading (sometimes)",
-                "like riding my bike",
-                "also make Garry's Mod Addons",
-                "hate dress shoes",
-                "don't use semicolons in javascript",
-                "want to learn x86 ASM (to flex on other people)",
-                "like open-source",
-                "strongly prefer dogs over cats",
-                "have a great dane",
-                "also have a mini austrailian laboradoodle",
-                "prefer single quote strings, but I often get them confused",
-                "hate going to sleep, but also hate waking up",
-                "don't care that eating a hot dog takes 69 years off my life, I still love and eat them"
-            ]
-            let i = 0
-
-            function advance() {
-                if (i >= texts.length) {
-                    i = 0
-                }
-
-                element.innerText = texts[i]
-
-                i++
-
-                setTimeout(advance, 2000)
-            }
-
-            advance()
-        }
-    </script>
 </head>
 <body>
     <!-- Some quick links -->
-    <div class="links">
-        <h3 class="links_title">🦁 Lion</h3>
-        <div class="links_flex_contianer">
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="https://www.splivid.live/">Splvid</a>
-
-            <a href="mailto:liondadev@gmail.com" class="cta_link">Email Me</a>
+    <div id="applyme">
+        <div class="links" id="links_container">
+            <h3 class="links_title">🦁 Lion</h3>
+            <div class="links_flex_container_background"  id="links">
+                <div class="links_flex_contianer">
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="https://www.splivid.live/">Splvid</a>
+                    <a href="mailto:liondadev@gmail.com" class="cta_link">Email Me</a>
+                </div>
+            </div>
+            <div class="links_expand_mobile">
+                <button onClick="expandMobileNav()">Links</button>
+            </div>
         </div>
     </div>
 
@@ -149,5 +114,59 @@
             </div>
         </div>
     </div>
+
+    <script>
+        window.onload = () => {
+            const element = document.getElementById('hero_who_am_i_text');
+            const texts = [
+                "make things with react",
+                "make things with nextjs",
+                "like playing with my dogs",
+                "go to school",
+                "bribe people with cheetos",
+                "like reading (sometimes)",
+                "like riding my bike",
+                "also make Garry's Mod Addons",
+                "hate dress shoes",
+                "don't use semicolons in javascript",
+                "want to learn x86 ASM (to flex on other people)",
+                "like open-source",
+                "strongly prefer dogs over cats",
+                "have a great dane",
+                "also have a mini austrailian laboradoodle",
+                "prefer single quote strings, but I often get them confused",
+                "hate going to sleep, but also hate waking up",
+                "don't care that eating a hot dog takes 69 years off my life, I still love and eat them"
+            ]
+            let i = 0
+
+            function advance() {
+                if (i >= texts.length) {
+                    i = 0
+                }
+
+                element.innerText = texts[i]
+
+                i++
+
+                setTimeout(advance, 2000)
+            }
+
+            advance()
+        }
+
+        // Mobile Navbar
+        let NavExpandedMobile = false
+
+        function expandMobileNav() {
+            if (NavExpandedMobile) {
+                document.getElementById("applyme").className = "mobile"
+            } else {
+                document.getElementById("applyme").className = ""
+            }
+
+            NavExpandedMobile = !NavExpandedMobile
+        }
+    </script>
 </body>
 </html>
