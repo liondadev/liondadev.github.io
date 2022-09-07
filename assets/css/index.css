@@ -19,6 +19,12 @@
 
 .hero .hero_avatar_image {
     border-radius: 0.25rem;
+    transition: 0.5s;
+}
+
+.hero .hero_avatar_image:hover {
+    filter: invert(100%);
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 7px 29px 0px;
 }
 
 .hero_title {
@@ -77,11 +83,15 @@
     height: 8rem;
 }
 
-.skill_learning {
+.bubble {
     background: #576574;
     padding: 0.25rem;
     font-size: 0.75rem;
     border-radius: 0.15rem;
+}
+
+.bubblecolortwo {
+    background: #34495e;
 }
 
 .links {
@@ -99,6 +109,10 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+}
+
+.links_title {
+    font-size: 1.85rem;
 }
 
 .links a {
@@ -150,6 +164,52 @@
 .project_container {
     width: 100%;
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project_container .project_buttons_container {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.project_container .project_buttons_container a {
+    padding: 0.5rem;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.project_container .project_buttons_container a:hover {
+    background: #34495e;
+    border-radius: 0.25rem;
+}
+
+.project_container .project_title_container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.project_container .project_title_container .project_title {
+    font-size: 1.5rem;
+}
+
+.project_container .project_title_container .project_tag_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.project_container .project_title_container .project_tag_container .project_tag {
+    padding: 0.5rem;
+    background: #34495e;
+    border-radius: 0.25rem;
 }
